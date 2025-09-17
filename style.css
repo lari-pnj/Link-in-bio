@@ -1,7 +1,7 @@
 
 @font-face {
     font-family:'Windsol-Regular.ttf';
-    src: url(Windsol-Regular.ttf);
+    src: url(/fontes/Windsol-Regular.ttf);
 }
 @media (max-width: 480px) {
   .caixa1, .menu_links {
