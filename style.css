@@ -1,0 +1,164 @@
+
+@font-face {
+    font-family:'Windsol-Regular.ttf';
+    src: url(Windsol-Regular.ttf);
+}
+@media (max-width: 480px) {
+  .caixa1, .menu_links {
+    max-width: 95%; /* ocupa quase toda tela no celular */
+  }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100%;
+    margin: 0;
+    text-align: center;
+    max-width: 100%;
+    background: linear-gradient(to right, #a18cd1 0%, #fbc2eb 100%);
+}
+
+main{
+    max-width: 800px;
+    min-width: 320px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    flex: 1;
+    min-height: calc(100vh - 60px);
+}
+
+h3{
+    font-family: 'Windsol-Regular.ttf';
+    font-weight: 100;
+    padding-bottom: 10px;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.384);
+}
+
+.titulo{
+    font-weight: 100;
+    font-family:'Windsol-Regular.ttf';
+    text-align: center;
+    margin-bottom: 30px;
+    color: #d4471c;
+    display: block;
+    font-weight: 100;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.466);
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    
+}
+
+.imagem_perfil{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 1px 3px 15px rgb(172, 27, 172) ;
+    gap: 10px;
+    display: block;
+}
+
+.titulo2{
+   font-family:'Windsol-Regular.ttf';
+   font-weight: 100;
+   color: #000000;
+   padding-top: 10px;
+   text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.384);
+}
+
+.titulo3{
+    font-weight: 100;
+    font-family: 'Windsol-Regular.ttf';
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.384);
+}
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    align-items: center;
+}
+.caixa1{
+    border: 2px solid rgba(7, 7, 7, 0.226);
+    border-radius: 4px;
+    padding: 15px;
+    text-align: center;
+    justify-items: center;
+    gap: 5px;
+    width: 100%;
+    margin: 10px auto;
+    font-size: 14px;
+    max-width: 500px;
+    min-width: 320px;
+    background: rgba(238, 221, 221, 0.767);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.555);
+    padding: 15px;
+    box-sizing: border-box;
+}
+.menu_links{
+    border: 2px solid rgba(7, 7, 7, 0.274);
+    border-radius:4px;
+    padding: 10px;
+    width: 100%;
+    margin: 10px auto;
+    font-size: 14px;
+    max-width: 500px;
+    min-width: 320px;
+    background: rgba(238, 221, 221, 0.767);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.459);
+    justify-items: center;
+    box-sizing: border-box;
+}
+.botao_redes{
+    text-decoration: none;
+    align-items: center;
+    background-color: rgba(134, 132, 132, 0.13);
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition-duration: 0.2s;
+    padding: 2px;
+    columns: 2;
+    margin: 5px;
+    display: inline-flex;
+}
+.botao_redes img{
+    width: 24px;
+    height: 24px;
+}
+
+.botao_redes:hover{
+    background-color: rgb(216, 119, 216);
+    transform: translateY();
+}
+.bio{
+    font-family: 'arial';
+    font-style: italic;
+    text-indent: 2em;
+    line-height: 1.5em;
+    padding-bottom: 15px;
+    padding-top: 15px;
+
+}
+
+.rodape{
+    font: 12px 'Windsol-Regular.ttf';
+    background: rgba(238, 221, 221, 0.767);
+    text-align: center;
+    font-size: 12px;
+    color: #000000;
+    padding: 6px;
+}
