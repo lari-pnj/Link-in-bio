@@ -1,7 +1,7 @@
 
 @font-face {
     font-family:'Windsol-Regular.ttf';
-    src: url(/fontes/Windsol-Regular.ttf);
+    src: url(fontes/Windsol-Regular.ttf);
 }
 @media (max-width: 480px) {
   .caixa1, .menu_links {
@@ -19,7 +19,7 @@ body{
     margin: 0;
     text-align: center;
     max-width: 100%;
-    background: linear-gradient(to right, #a18cd1 0%, #fbc2eb 100%);
+    background: linear-gradient(to right, #62499c 0%, #ecadda 100%);
 }
 
 main{
