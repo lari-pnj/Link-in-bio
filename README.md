@@ -1,2 +1,2 @@
 # Link-in-bio
-Uma pequena pagina onde coloco links das minhas redes sociais
+Site de links feito com HTML e CSS para Adicionar Meus perfis nas Redes sociais
