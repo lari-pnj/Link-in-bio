@@ -2,6 +2,7 @@
 @font-face {
     font-family:'Windsol-Regular.ttf';
     src: url(fontes/Windsol-Regular.ttf);
+    
 }
 @media (max-width: 480px) {
   .caixa1, .menu_links {
@@ -19,7 +20,9 @@ body{
     margin: 0;
     text-align: center;
     max-width: 100%;
-    background: linear-gradient(to right, #62499c 0%, #ecadda 100%);
+    background: linear-gradient(to right, #12100E, #272322);
+    background-image: url('img/6940220.jpg');
+    
 }
 
 main{
@@ -40,13 +43,16 @@ h3{
 }
 
 .titulo{
-    font-weight: 100;
-    font-family:'Windsol-Regular.ttf';
+    font-weight: 200;
+    font-family:"clarkson";
+    font-style: light;
+    font-weight:400;
+    font-size: 36px;
     text-align: center;
+    margin-top: 50px;
     margin-bottom: 30px;
-    color: #f50606;
+    color: #ffffff;
     display: block;
-    font-weight: 100;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.466);
 }
 
@@ -156,7 +162,7 @@ h3{
 
 .rodape{
     font: 12px 'Windsol-Regular.ttf';
-    background: rgba(238, 221, 221, 0.767);
+    background: rgba(122, 106, 106, 0.493);
     text-align: center;
     font-size: 12px;
     color: #000000;
