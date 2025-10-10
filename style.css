@@ -2,8 +2,9 @@
 @font-face {
     font-family:'Windsol-Regular.ttf';
     src: url(fontes/Windsol-Regular.ttf);
-    
 }
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Quicksand:wght@300..700&display=swap');
+
 @media (max-width: 480px) {
   .caixa1, .menu_links {
     max-width: 95%; /* ocupa quase toda tela no celular */
@@ -20,8 +21,7 @@ body{
     margin: 0;
     text-align: center;
     max-width: 100%;
-    background: linear-gradient(to right, #12100E, #272322);
-    background-image: url('img/6940220.jpg');
+    background: linear-gradient(to right, #1d1d1d, #404040 , #606060);
     
 }
 
@@ -44,8 +44,8 @@ h3{
 
 .titulo{
     font-weight: 200;
-    font-family:"clarkson";
-    font-style: light;
+    font-family:'Playfair Display', serif;
+    font-style: normal;
     font-weight:400;
     font-size: 36px;
     text-align: center;
@@ -73,6 +73,15 @@ h3{
     box-shadow: 1px 3px 15px rgb(172, 27, 172) ;
     gap: 10px;
     display: block;
+    animation: float 4s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
 }
 
 .titulo2{
@@ -162,7 +171,7 @@ h3{
 
 .rodape{
     font: 12px 'Windsol-Regular.ttf';
-    background: rgba(122, 106, 106, 0.493);
+    background: rgba(201, 184, 184, 0.493);
     text-align: center;
     font-size: 12px;
     color: #000000;
