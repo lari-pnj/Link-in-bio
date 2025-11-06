@@ -82,6 +82,13 @@ section{
 span{
     color:#b74b4b;
 }
+
+.conteudo p{
+    margin: 1.5rem 0;
+    font-size: 1.2rem;
+    color: #ccc;
+    line-height: 1.6;
+}
 .home-conteudo h3{
     font-size: 2.5rem;
     margin-bottom: 1rem;
