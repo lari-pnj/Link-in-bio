@@ -4,69 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>links</title>
+    <link rel="shortcut icon" href="img/link-quebrado.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 </head>
 <body>
     <header>
-        <a class="logo" href="#">Olá</a>
+        <a class="logo" href="#"
+        data-aos="zoom-out" data-aos-duration="1000">Olá</a>
 
         <nav>
-           <a href="#home">home</a>
-           <a href="#h1projetos">projetos</a>
-           <a href="#links.html">links</a>
-           <a href="#menu_links">contato</a>
+           <a href="#home" data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="1000">home</a>
+           <a href="#conteudo" data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="2000">Sobre Mim</a>
+           <a href="#menu_links" data-aos="fade-up" data-aos-anchor-placement="center-center" data-aos-duration="3000">Redes sociais</a>
         </nav>
     </header>    
 
  <section class="home">
     <div class="imagem_perfil">
-      <img class="minha_img" src="https://i.pinimg.com/1200x/e7/a8/12/e7a812ff0ed184dc8a191504a8fe5e70.jpg" alt="foto principal">
+      <img class="minha_img" src="https://i.pinimg.com/1200x/e7/a8/12/e7a812ff0ed184dc8a191504a8fe5e70.jpg" alt="foto principal" data-aos="fade-up" data-aos-duration="1500">
     </div>
 
-    <div class="conteudo">
-        <h1>Sou a <span>Larissa</span></h1>
-        <p>Desenvolvedora em formação com foco em Full Stack. Estudo Python (com frameworks e bibliotecas), HTML, CSS e JavaScript. Iniciei minha trajetória em hardware e hoje busco me especializar em software, unindo conhecimento técnico e prática para criar soluções completas e eficientes.</p>
+    <div id="conteudo">
+        <h1 data-aos="fade-down" data-aos-duration="1500" >Sou a <span>Larissa</span></h1>
+        <p data-aos="fade-down" data-aos-duration="2000" >Desenvolvedora em formação com foco em Full Stack. Estudo Python (com frameworks e bibliotecas)
+         HTML, CSS e JavaScript. Iniciei minha trajetória em hardware e hoje busco me especializar em software, unindo conhecimento técnico e prática para criar soluções completas e eficientes.</p>
         
         <div id="menu_links">
-            <h1>Redes sociais</h1>
-            <a class="botao_redes" href="https://github.com/lari-pnj "target="_blank">
-            <img class="icon" src="icones/github.png" alt="icongit" width="30px">Github</a>
-            <a class="botao_redes" href="https://www.linkedin.com/in/larissa-valleriano-750ab6352/" target="_blank">
-            <img class="icon" src="icones/linkedin.png" alt="iconlinkedin" width="30px">Linkedin</a>
-            <a class="botao_redes" href="https://www.tiktok.com/@lareaoxy" target="_blank">
-            <img class="icon" src="icones/tiktok.png" alt="icontiktok"width="30px">Tiktok</a>
-            <a class="botao_redes" href="https://www.youtube.com/@larie2222"target='_blank'>
-            <img class="icon" src="icones/youtube.png" alt="iconyt"width="30px">Youtube</a>
+            <h1 data-aos="fade-down" data-aos-duration="2000">Redes sociais</h1>
+
+            <a data-aos="fade-left" data-aos-duration="3000" class="botao_redes" href="https://github.com/lari-pnj "target="_blank">
+            <img src="icones/github.png" alt="icongit">Github</a>
+
+            <a data-aos="fade-left" data-aos-duration="1500" class="botao_redes" href="https://www.linkedin.com/in/larissa-valleriano-750ab6352/" target="_blank">
+            <img src="icones/linkedin.png" alt="iconlinkedin">Linkedin</a>
+
+            <a data-aos="fade-left" data-aos-duration="1500" class="botao_redes" href="https://www.tiktok.com/@lareaoxy" target="_blank">
+            <img src="icones/tiktok.png" alt="icontiktok">Tiktok</a>
+            
+            <a data-aos="fade-left" data-aos-duration="1500" class="botao_redes" href="https://www.youtube.com/@larie2222"target='_blank'>
+            <img src="icones/youtube.png" alt="iconyt">Youtube</a>
         </div>
     </div>
     </section>
 
-    <h1 id="h1projetos">Projetos</h1>
-    <section class="projetos">
+    <footer class="rodape">
+        <p>© 2026 Larissa Valleriano. Todos os direitos reservados.</p>
+    </footer>
 
-        <div class="itens">
-            <img src="img/Captura de Tela (96).png" alt="projeto 1" width="300px">
-            <br>
-             <h1>Pagina Otimizador Aoxy</h1>
-            <p>Projeto de criação de uma pagina para download do app de otimização</p>
-            <button><a href="https://lari-pnj.github.io/Pagina-Otimizador-Aoxy/" target="_blank">Acessar o site</a></button>
-        </div>
-        <div class="itens">
-            <img class="otimizador" src="img/fundo1.png" alt="otimizador" width="250px" height="180px">
-            <br>
-            <h1>Otimizador-Aoxy-V1</h1>
-            <p>Um app facil e intuitivo para otimização do seu computador</p>
-            <button><a href="https://github.com/lari-pnj/Otimizador-Aoxy-V1" target="_blank">Ver no GitHub</a></button>
-        </div>
-        <div class="itens">
-            <img src="img/menu atual.png"alt="rpg" width="300px">
-            <br>
-            <h1>7 noites na Taberna</h1>
-            <p>jogo de rpg criado para jogar direto do terminal do pc</p>
-            <button><a href="https://github.com/lari-pnj/7-Noites-Na-Taberna" target="_blank">Ver no GitHub</a></button>
-        </div>
-    </section>
 </body>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+     AOS.init();
+     </script>
 </html>
