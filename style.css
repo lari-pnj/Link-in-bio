@@ -8,8 +8,6 @@
     border: none;
     outline: none;
     font-family: 'Poppins', sans-serif;
-}
-html{
     scroll-behavior: smooth;
 }
 
@@ -20,72 +18,111 @@ body{
     background: black;
     color: white;
 }
-header{
+.cabecalho{
     margin-top: auto;
     width: 100%;
-    padding: 1rem 9%;
+    padding: 0.9rem 8%;
+    padding-bottom: 0;
     background-color: transparent;
     filter: drop-shadow(10px);
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+
+       .logo{
+         font-family: "Poppins", sans-serif;
+         font-size: 3rem;
+         color: #b74b4b;
+         font-weight: 600;
+         cursor: pointer;
+         transition: 0.5s ease;
+         text-decoration: none;
+
+            &:hover {
+              transform: scale(1.1);
+            }
+        }
+
+            nav a{
+               font-size: 1rem;
+               color: white;
+               margin-left: 1rem;
+               font-weight: 400;
+               transition: 0.3s ease;
+               border-bottom: 3px solid transparent;
+
+                   &:hover,:active {
+                       color:#b74b4b;
+                       border-bottom: 3px solid;
+                    }
+                }
     
 }
-.logo{
-    font-family: "Poppins", sans-serif;
-    font-size: 3rem;
-    color: #b74b4b;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.5s ease;
-    text-decoration: none;
-}
-.logo:hover{
-    transform: scale(1.1);
-}
-nav a{
-    font-size: 1rem;
-    color: white;
-    margin-left: 1rem;
-    font-weight: 400;
-    transition: 0.3s ease;
-    border-bottom: 3px solid transparent;
-}
-nav a:hover, 
-nav a.active{
-    color:#b74b4b;
-    border-bottom: 3px solid;
-}
+
+
 .home{
    display: flex;
    justify-content: center;
    align-items: center;
    gap: 4rem;
-   flex-direction: row;
    background-color: black;
    padding: 5rem 9%;
-   position: relative;
    z-index: 1;
-}
-.home.home-conteudo h1{
-  font-size: 500px;
-  font-weight: 500;
-  line-height: 1.3;
+}  
+
+.home-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    .imagem_perfil{
+       margin-bottom: 20px;
+       border-radius: 50%;
+       position: relative;     
+       transition: 0.2s linear;
+       animation: backwards;
+       animation: flutuar 3s ease-in-out infinite;
+
+
+           &:hover{
+             font-size: 1.8rem;
+             font-weight: 500;
+             }
+           }
+            
+            .minha_img {
+                width: 100%;
+                max-width: 200px;
+                min-width: 100px;
+                border-radius: 50%;
+                box-shadow: 0 0 18px #b74b4b;
+            }
+
+           h1 {
+            font-size: 20px;
+            text-align: center;
+            padding: 15px;
+           }
+
+           p {
+            font-size: 18px;
+            font-weight: 200;
+            text-align: center;
+           }
+
+           span {
+              color:#b74b4b;
+            }
+
+
+
+
 }
 
-span{
-    color:#b74b4b;
-}
-
-#conteudo p{
-    margin: 1.5rem 0;
-    font-size: 1.2rem;
-    color: #ccc;
-    line-height: 1.6;
-    margin-bottom: 50px;
-}
-
-.devpro-guia {
+#devpro-guia {
     margin-top: 30px;
     border-top: #cccccc28 1px solid ;
     display: flex;
@@ -108,49 +145,30 @@ span{
         font-weight: 200;
         font-size: 15px;
     }
-       a{
-        padding: 10px;
+       .botao_devpro{
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        margin-top: 20px;
+        padding: 10px 10px;
         background-color: rgba(6, 233, 176, 0.349);
         border-radius: 10px;
+        color: white;
+        
 
-        &:hover {
-             background-color: rgba(83, 192, 165, 0.349);
-             transform: scale(1.3)translate();
-             box-shadow: 0 0 25px #1eee97 ;
-        }
+             &:hover {
+                background-color: rgba(83, 192, 165, 0.349);
+                transform: scale(1.3)translate();
+                box-shadow: 0 0 25px #1eee97 ;
+            }
     }
 
-    img{
-     margin-right: 10px;
-     border-radius: 50%;
-  }
-}
-.home-conteudo h3{
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-}
-.home .imagem_perfil{
-   border-radius: 50%;
-   position: relative;
-   width: 40vw;    
-   transition: 0.2s linear;
-   animation: backwards;
-   animation: flutuar 3s ease-in-out infinite;
-
-}
-.home .minha_img{
-  width: 100%;
-  max-width: 300px;
-  min-width: 200px;
-  height: auto;
-  border-radius: 50%;
-  display: inline-block;
-  box-shadow: 0 0 18px #b74b4b;
-}
-.home .imagem_perfil:hover{
-    font-size: 1.8rem;
-    font-weight: 500;
+              img{
+                  margin-right: 10px;
+                  border-radius: 50%;
+                  width: 30px;
+                  height: 30px;
+                }
 }
 
 @keyframes flutuar{
@@ -163,62 +181,35 @@ span{
 }
    
 #menu_links{
-    margin-top: 50px;
-    border-top: #cccccc28 1px solid ;
-
-}
-#menu_links h1{
     margin-top: 20px;
-    margin-bottom: 30px;
-    font-family: "Poppins" sans-serif;
-    font-weight: 200;
-}
-#menu_links a{
-    padding: 8px;
-    border-radius: 8px;
-    transition: ease-in-out 0.3s;
-}
-#menu_links a:hover{
-    background-color: rgb(216, 119, 216);
-    transform: scale(1.3)translate();
-    background-color: #b74b4b;
-    box-shadow: 0 0 25px #bb8484 ;
-}
-.sociais{
-    font-weight: 15px;
-    font-family: "Poppins";
-}
-.icon {
-    margin-right: 8px;
-    filter: brightness(0) invert(1) 
-}
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    border: none;
+
+        .icon {
+          filter: brightness(0) invert(1);
+        }
+          
+        .botao_redes{
+          cursor: pointer;
+          transition-duration:all 0.2s ease;
+          padding: 5px;
+        
+            img{
+              width: 30px;
+              height: 30px;
+
+                &:hover{
+                 transform: scale(1.3);
+                }
+            }
+
+        } 
 
 
-.botao_redes{
-    display: inline-flex;
-    text-decoration: none;
-    align-items: center;
-    background-color: rgba(134, 132, 132, 0.13);
-    border-radius: 4px;
-    cursor: pointer;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-    transition-duration: 0.2s;
-    padding: 2px;
-    columns: 2;
-    margin: 5px;
-    color: white;
-}
-.botao_redes img{
-    width: 24px;
-    height: 24px;
 }
 
-.botao_redes:hover{
-    background-color: rgb(216, 119, 216);
-    transform: scale(1.3)translate();
-    background-color: #b74b4b;
-    box-shadow: 0 0 25px #bb8484 ;
-}
 .rodape{
     height: 120px;
     border-top: #cccccc28 1px solid;
@@ -229,75 +220,22 @@ span{
     padding: 20px;
     font-size: 14px;
     color: rgba(255, 255, 255, 0.678);
-}
-.rodape p{
-    margin-top: 7px;
-}
-.rodape a{
-    color: #b74b4b;
-    text-decoration: none;
-    margin-top: 9px;
-}
-.rodape a:hover{
-    text-decoration: underline;
-}
 
-/*media querys */
+       p{
+         margin-top: 7px;
+        }
 
-@media (max-width: 1024px) {
-  .home {
-    flex-direction: column; 
-    text-align: center;
-    gap: 3rem;
-  }
+         a{
+          color: #b74b4b;
+          text-decoration: none;
+          margin-top: 9px;
 
-  .home .imagem_perfil {
-    width: 55vw; 
-  }
-
-  .home .home-conteudo h3 {
-    font-size: 2.4rem;
-  }
+            &:hover{
+                text-decoration: underline;
+            }
+        }
 }
 
-@media (max-width: 600px) {
-    header{
-       flex-direction: column;
-       align-items: center;
-       padding: 20px 0;
-       margin-bottom: 0;
-    }
-  .home {
-    margin-top: 0;
-    padding-top: 0;
-    flex-direction: column;
-    padding: 6rem 4% 2rem;
-    margin-bottom: 40px;
-  }
 
-  .home .imagem_perfil {
-    width: 70vw;
-    margin-top: 0;
-    margin-bottom: 30px;
-  }
 
-  .home .home-conteudo h3 {
-    font-size: 1.5rem;
-  }
-
-  .menu_links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #menu_links h1{
-    padding-top: 20px;
-    margin-bottom: 50px;
-  }
-
-  .botao_redes {
-    width: 80%;
-    justify-content: center;
-  }
-}
 
