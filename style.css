@@ -82,6 +82,48 @@ span{
     font-size: 1.2rem;
     color: #ccc;
     line-height: 1.6;
+    margin-bottom: 50px;
+}
+
+.devpro-guia {
+    margin-top: 30px;
+    border-top: #cccccc28 1px solid ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px ;
+
+    h3{
+        font-size: 20px;
+        font-weight: 500;
+        padding-bottom: 15px;
+    }
+
+    span{
+        color: rgb(6, 233, 176);
+    }
+
+    p{
+        font-weight: 200;
+        font-size: 15px;
+    }
+       a{
+        padding: 10px;
+        background-color: rgba(6, 233, 176, 0.349);
+        border-radius: 10px;
+
+        &:hover {
+             background-color: rgba(83, 192, 165, 0.349);
+             transform: scale(1.3)translate();
+             box-shadow: 0 0 25px #1eee97 ;
+        }
+    }
+
+    img{
+     margin-right: 10px;
+     border-radius: 50%;
+  }
 }
 .home-conteudo h3{
     font-size: 2.5rem;
