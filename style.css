@@ -173,6 +173,7 @@ body{
 }
 iframe {
     margin-bottom: 20px;
+    max-width: ;
 }
 @keyframes flutuar{
     0%, 100% {
